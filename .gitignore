@@ -1,0 +1,11 @@
+# OS-specific files
+.DS_Store
+
+# Node modules
+node_modules/
+
+# IDE files
+.vscode/
+
+# NPM package-lock
+package-lock.json
