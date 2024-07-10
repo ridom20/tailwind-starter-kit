@@ -3,6 +3,6 @@ A comprehensive, easy-to-use starter kit for building modern, responsive web pro
 
 # Setup
 npm install</br>
-npm run build
+npm run build</br>
 npm run dev
 
