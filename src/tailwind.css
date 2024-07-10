@@ -1,0 +1,517 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-menu {
+    @apply relative bg-transparent pl-28 pr-32 py-14 mb-8 transition duration-300 ease-in-out cursor-pointer border-l-4 border-transparent;
+  }
+  .sidebar-content {
+    @apply sm:text-xl text-lg font-medium text-light-content-neutral-600 dark:text-dark-content-neutral-300;
+  }
+  .sidebar-menu.active {
+    @apply bg-light-bg-neutral-100 border-light-border-primary-500 dark:bg-dark-bg-neutral-800;
+  }
+  .sidebar-content.active {
+    @apply text-light-bg-neutral-900 dark:text-white;
+  }
+  .bottom-bar .sidebar-menu {
+    @apply pt-16 pb-6 pl-0 pr-0;
+  }
+  .bottom-bar .sidebar-menu.active {
+    @apply border-0 border-b-2 border-light-border-primary-500 bg-transparent;
+  }
+  @media screen and (min-width: 768px) {
+    .sidebar_small {
+      width: 70px;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .sidebar_small .logo {
+      @apply hidden;
+    }
+  
+    .sidebar_small .logo-container {
+      @apply p-10;
+    }
+  
+    .sidebar_small .logo-container::before {
+      @apply content-[url("/images/favicon.svg")] block;
+    }
+  
+    .sidebar_small .profile-section {
+      @apply hidden invisible opacity-0 transition-opacity duration-300;
+    }
+  
+    .sidebar_small .responsive-bar {
+      @apply p-20;
+    }
+  
+    .sidebar_small .responsive-bar span {
+      @apply hidden;
+    }
+  
+    .main-content_large,
+    .copyright {
+      margin-left: 70px !important;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .main-content_large #fixedElement {
+      margin-left: 70px !important;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .sidebar {
+      left: -300px;
+      transition: left 0.5s ease-in-out;
+    }
+  
+    .sidebar_small {
+      left: 0;
+      width: 260px;
+      transition: left 0.5s ease-in-out, width 0.5s ease-in-out;
+      z-index: 999;
+      overflow-y: scroll;
+    }
+    .sidebar_small .sidebar-collapse {
+      @apply absolute right-[10px] top-[26px] text-2xl text-light-content-neutral-600 dark:text-dark-content-neutral-400 block;
+    }
+  
+    .main-content_large,
+    .main-content_large #fixedElement {
+      margin-left: 0 !important;
+      transition: margin-left 0.5s ease-in-out;
+    }
+  }
+  .dashboard-pricing-one .pricing-card {
+    width: 100px;
+    height: 120px;
+    padding-top: 40px;
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #06b6d4;
+    color: white;
+  
+  }
+  .dashboard-pricing-one .pricing-card::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: -7.2px;
+    top: 0.1px;
+    border-bottom: 10px solid #0891b2;
+    border-left: 7px solid transparent;
+  }
+  @media screen and (min-width:1600px){
+    .dashboard-pricing-one .pricing-card::before{
+  
+      left: -6.5px;
+    }
+  }
+  .dashboard-pricing-one .pricing-card::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: -48.5px;
+    left: 0;
+    border-left: 50px solid #06b6d4;
+    border-right: 50px solid #06b6d4;
+    border-bottom: 50px solid transparent;
+  }
+  .dashboard-pricing-two .pricing-card {
+    width: 100px;
+    height: 120px;
+    padding-top: 40px;
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffb455;
+    color: white;
+  
+  }
+  .dashboard-pricing-two .pricing-card::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: -7.2px;
+    top: 0.1px;
+    border-bottom: 10px solid #ff9209;
+    border-left: 7px solid transparent;
+  }
+  .dashboard-pricing-two .pricing-card::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: -48.5px;
+    left: 0;
+    border-left: 50px solid #ffb455;
+    border-right: 50px solid #ffb455;
+    border-bottom: 50px solid transparent;
+  }
+  .dashboard-pricing-two .price-card-container .save-badge{
+    position: absolute;
+      top: 15px;
+      left: 0;
+      padding: 8px 20px;
+      background: #BBF7D0;
+      color: #14532D;
+      font-size: 18px;
+      font-weight: 500;
+      box-shadow: -1px 2px 3px rgba(0,0,0,.3);
+  }
+  .dashboard-pricing-two .price-card-container .save-badge::before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    top: 0;
+    left: -5.5px;
+    padding: 0 0 7px;
+    background: inherit;
+    border-radius: 5px 0 0 0px;
+  }
+  .dashboard-pricing-two .price-card-container .save-badge::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    bottom: -4.5px;
+    left: -5.5px;
+    background: #22C55E;
+    border-radius: 0px 0 0 5px;
+  }
+  .dashboard-pricing-three .pricing-card {
+    width: 100px;
+    height: 120px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    font-size: 20px;
+    top: -10px;
+    right: 25px;
+    text-align: center;
+    background-color: #fc80ac;
+    color: white;
+  
+  }
+  .dashboard-pricing-three .pricing-card::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: -7.2px;
+    top: 0.1px;
+    border-bottom: 10px solid #f55484;
+    border-left: 7px solid transparent;
+  }
+  .dashboard-pricing-three .pricing-card::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: -48.5px;
+    left: 0;
+    border-left: 50px solid #fc80ac;
+    border-right: 50px solid #fc80ac;
+    border-bottom: 50px solid transparent;
+  }
+  @media screen and (max-width:1099px){
+    .dashboard-pricing-one .pricing-card,.dashboard-pricing-two .pricing-card,.dashboard-pricing-three .pricing-card{
+      width: 80px;
+      height: 100px;
+      padding-top: 20px;
+      font-size: 16px;
+      right: 15px;
+    }
+    .dashboard-pricing-one .pricing-card::after{
+      border-left: 40px solid #06b6d4;
+      border-right: 40px solid #06b6d4;
+      border-bottom: 40px solid transparent;
+      bottom: -38.5px;
+    }    
+    .dashboard-pricing-two .pricing-card::after{
+      border-left: 40px solid #ffb455;
+      border-right: 40px solid #ffb455;
+      border-bottom: 40px solid transparent;
+      bottom: -38.5px;
+    }  
+    .dashboard-pricing-three .pricing-card::after{
+      border-left: 40px solid #fc80ac;
+      border-right: 40px solid #fc80ac;
+      border-bottom: 40px solid transparent;
+      bottom: -38.5px;
+    }
+    .dashboard-pricing-two .price-card-container .save-badge{
+      font-size: 14px;
+    }
+  }
+  .overlay-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    transition: background-color 0.8s, transform 0.8s, opacity 0.8s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .overlay-visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader img {
+    animation: rotate 2s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  /* Common Button styles */
+  .btn-primary-fill {
+    @apply rounded font-medium bg-light-bg-primary-500  text-white hover:bg-light-bg-primary-600 focus:bg-light-bg-primary-700 transition duration-300;
+  }
+  
+  .btn-secondary-fill {
+    @apply rounded font-medium bg-light-bg-secondary-500  text-white hover:bg-light-bg-secondary-600 focus:bg-light-bg-secondary-700 transition duration-300;
+  }
+  
+  .btn-primary-outline {
+    @apply rounded font-medium text-light-content-primary-500 border-[1.5px] border-light-border-primary-300 hover:bg-light-bg-primary-50 hover:border-light-border-primary-300 hover:text-light-content-primary-600 focus:bg-light-bg-primary-100 transition duration-300;
+  }
+  
+  /* Button styles for different sizes */
+  .btn-lg {
+    @apply px-24 py-20;
+  }
+  
+  .btn-md {
+    @apply px-24 py-16;
+  }
+  
+  .btn-sm {
+    @apply px-24 py-12;
+  }
+  
+  .btn-xs {
+    @apply px-16 py-10;
+  }
+  
+  /* Disabled styles for all button sizes */
+  .btn-primary-fill:disabled {
+    @apply bg-light-bg-neutral-400 cursor-not-allowed;
+  }
+  .btn-primary-outline:disabled {
+    @apply border-light-border-neutral-300 text-light-content-neutral-300 cursor-not-allowed hover:bg-inherit;
+  }
+  /* Common input style */
+  
+  .input {
+    @apply rounded border border-light-border-neutral-300  text-light-content-neutral-900 sm:text-lg text-sm font-normal outline-none focus:border-light-border-primary-500 dark:border-dark-border-neutral-600 focus:dark:border-dark-border-primary-500 dark:text-white;
+  }
+  .input::placeholder {
+    @apply text-light-content-neutral-500;
+  }
+  .input:read-only {
+    @apply border-light-border-neutral-300 bg-light-bg-neutral-50 text-light-content-neutral-400 cursor-not-allowed;
+  }
+  .input-lg {
+    @apply p-16;
+  }
+  .input-md {
+    @apply p-12;
+  }
+  .input-sm {
+    @apply px-12 py-8;
+  }
+  .input-error {
+    @apply bg-light-bg-danger-50 border-inherit border-0 focus:border-inherit outline-none;
+  }
+  
+  /* custom radio */
+  .custom-radio-circle{
+    @apply w-20 h-20 inline-block mr-10 rounded-full border border-light-border-neutral-300  dark:border-dark-border-neutral-600;
+  }
+  .custom-radio input[type="radio"] + label span {
+    transition: background .2s, transform .2s;
+  }
+  .custom-radio-label{
+    @apply  md:text-lg text-sm font-medium mb-8 text-light-content-neutral-600 dark:text-dark-content-neutral-300;
+  }
+  
+  .custom-radio input[type="radio"]:checked + label span {
+    background-color: #0056D2;
+    @apply shadow-radio-shadow  dark:shadow-radio-shadow-dark;
+  }
+  
+  .yellow-shade {
+    @apply rounded-[295px] bg-light-bg-secondary-500 bg-opacity-70 filter blur-[20px];
+  }
+  .cyan-shade {
+    @apply rounded-[295px] bg-light-bg-cyan-500 bg-opacity-70 filter blur-[20px];
+  }
+  .red-shade {
+    @apply rounded-[295px] bg-pink bg-opacity-80 filter blur-[20px];
+  }
+  /* For yellow-gradient */
+  .yellow-gradient {
+    background: linear-gradient(136deg, #ffb455 2.96%, #ff9209 96.54%);
+  }
+  
+  /* For cyan-gradient */
+  .cyan-gradient {
+    background: linear-gradient(136deg, #06b6d4 2.96%, #0891b2 96.54%);
+  }
+  
+  /* For red-gradient */
+  .red-gradient {
+    background: linear-gradient(136deg, #fc80ac 2.96%, #f55484 96.54%);
+  }
+  
+  .pricing-card-active {
+    @apply border-light-border-primary-300 shadow-4xl hover:cursor-pointer transition duration-300 dark:border-dark-border-primary-800;
+  }
+  .pricing-card-active button {
+    @apply btn-primary-fill btn-sm;
+  }
+  
+  .question-card {
+    @apply font-question;
+  }
+  .question-content {
+    @apply px-12 py-8 flex items-center gap-12 mb-8 cursor-pointer;
+  }
+  .question-content.active {
+    @apply border border-light-border-neutral-300 rounded-md dark:border-dark-border-neutral-600;
+  }
+  .check-button {
+    @apply border border-light-border-neutral-200 sm:w-32 sm:h-32 w-26 h-26 rounded-full flex items-center justify-center cursor-pointer;
+  }
+  .question-content.active .check-button {
+    @apply bg-light-bg-primary-500 border-light-border-primary-500;
+  }
+  .check-button.correct {
+    @apply bg-light-bg-success-500 border-light-bg-success-500;
+  }
+  .question-content.active .check-button p {
+    @apply text-white;
+  }
+  .check-button.correct p {
+    @apply text-white;
+  }
+  .check-button input[type="radio"] {
+    display: none;
+  }
+  
+  .subject-card {
+    @apply bg-white py-16 px-28 rounded-lg border-light-border-neutral-300 border h-full flex flex-col items-center hover:shadow-xl cursor-pointer transition-all duration-200 ease-in-out dark:bg-dark-bg-neutral-900 dark:border-dark-bg-neutral-600 dark:hover:shadow-xl;
+  }
+  .nav-active {
+    @apply text-light-content-primary-500 border-b-2 border-light-border-primary-500 dark:text-dark-content-primary-200 dark:border-dark-content-primary-200;
+  }
+  
+  .sidebar-hover-five path {
+    @apply group-hover:fill-light-bg-neutral-900 dark:fill-dark-bg-neutral-300 dark:group-hover:fill-white;
+  }
+  
+  .sidebar-hover path {
+    @apply group-hover:stroke-light-bg-neutral-900 dark:stroke-dark-bg-neutral-300 dark:group-hover:stroke-white;
+  }
+  .sidebar-button svg path {
+    @apply dark:stroke-dark-bg-neutral-300;
+  }
+  .sidebar-hover.active path {
+    @apply stroke-light-bg-neutral-900 dark:stroke-white;
+  }
+  .slider-button {
+    @apply w-84 h-40 block relative rounded-[32px] bg-light-bg-neutral-200 cursor-pointer transition duration-300 ease-in-out dark:bg-dark-bg-neutral-700;
+  }
+  
+  .slider-button:after {
+    @apply w-32 h-32 block absolute top-4 left-6 bg-white rounded-full transition duration-300 ease-in-out dark:bg-dark-bg-neutral-900;
+    content: "";
+    transition: 0.3s;
+  }
+  .custom-select-arrow-default {
+    @apply relative mb-2 flex items-center after:w-[8px] after:h-[8px] after:border-light-border-neutral-900 after:border-b after:border-r after:transform after:rotate-45 after:absolute after:top-[22px] after:right-[16px] dark:after:border-dark-bg-neutral-400;
+  }
+  .custom-select-arrow-sm {
+    @apply relative mb-2 flex items-center after:w-[8px] after:h-[8px] after:border-light-border-neutral-900 after:border-b after:border-r after:transform after:rotate-45 after:absolute after:top-[14px] after:right-[16px] dark:after:border-dark-bg-neutral-400;
+  }
+  .custom-select {
+    @apply text-light-content-neutral-900 font-normal bg-white transition-all cursor-pointer hover:border-light-border-primary-600 border border-light-border-neutral-300 rounded-md outline-light-border-primary-500 appearance-none invalid:text-light-content-neutral-500 w-full dark:invalid:text-light-content-neutral-600 dark:bg-dark-bg-neutral-900 dark:border-dark-border-neutral-600 dark:text-white;
+  }
+  .custom-select-form {
+    @apply p-12 rounded border border-light-border-neutral-300 bg-light-bg-neutral-50 dark:bg-transparent  text-light-content-neutral-900 sm:text-lg text-sm font-normal outline-none appearance-none invalid:text-light-content-neutral-500 w-full dark:invalid:text-light-content-neutral-600 dark:bg-dark-bg-neutral-900 dark:border-dark-border-neutral-600 dark:text-white;
+  }
+  .custom-select-sm {
+    @apply text-sm  px-12 py-10;
+  }
+  .custom-select-default {
+    @apply sm:text-lg text-sm  p-16;
+  }
+  .apexcharts-legend.apexcharts-align-center.apx-legend-position-right {
+    @apply pt-26 gap-60;
+  }
+  .apexcharts-legend-series[rel="1"] .apexcharts-legend-text {
+    @apply after:content-["সঠিক"] after:absolute after:top-[-30px] after:left-0 after:text-xl after:font-normal after:text-light-content-neutral-600 dark:after:text-dark-content-neutral-300;
+  }
+  
+  .apexcharts-legend-series[rel="2"] .apexcharts-legend-text {
+    @apply after:content-["স্কিপ"] after:absolute after:top-[-30px] after:left-0 after:text-xl after:font-normal after:text-light-content-neutral-600 dark:after:text-dark-content-neutral-300;
+  }
+  
+  .apexcharts-legend-series[rel="3"] .apexcharts-legend-text {
+    @apply after:content-["ভুল"] after:absolute after:top-[-30px] after:left-0 after:text-xl after:font-normal after:text-light-content-neutral-600 dark:after:text-dark-content-neutral-300;
+  }
+  
+  .slider-button svg {
+    @apply absolute top-10 z-100;
+  }
+  svg.sun path {
+    @apply dark:fill-dark-bg-neutral-400;
+  }
+  svg.moon path {
+    @apply dark:fill-dark-bg-neutral-400;
+  }
+  .slider-button svg.sun {
+    left: 11px;
+    transition: 0.3s;
+  }
+  .slider-button svg.sun path {
+    @apply fill-light-content-neutral-500 dark:fill-dark-bg-neutral-400;
+  }
+  
+  .slider-button svg.moon {
+    right: 10px;
+    transition: 0.3s;
+  }
+  .slider-button svg.moon path {
+    @apply fill-light-content-neutral-500 dark:fill-dark-bg-neutral-400;
+  }
+  .toggle-checkbox {
+    @apply invisible;
+  }
+  
+  .toggle-checkbox:checked + .slider-button:after {
+    left: 80px;
+    transform: translateX(-100%);
+  }
+  

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Starter Kit</title>
+  <link href="/assets/css/remixicon.css" rel="stylesheet" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="font-default overflow-x-hidden flex flex-col min-h-screen dark:bg-dark-bg-neutral-900">
+  <!-- header section -->
+  <header>
+    <nav class="bg-white z-10 fixed w-full top-0 shadow-2xl dark:bg-navbar">
+      <div class="flex flex-wrap items-center justify-between 2xl:px-80 py-20 xl:px-70 md:px-60 sm:px-40 xsm:px-20">
+        <a href="#" class="flex items-center space-x-3">
+          <img src="/assets/images/logo.png" class="md:h-32 h-24" alt="Logo" />
+        </a>
+        <div class="flex items-center lg:order-2 space-x-3 lg:space-x-0">
+          <a href="#"
+            class="md:text-lg text-sm font-medium block md:p-10 p-6 text-light-content-neutral-900 rounded md:mr-14 hover:text-light-content-primary-500 md:hover:bg-transparent md:hover:text-light-content-primary-600 dark:text-dark-content-neutral-300"> Login </a>
+          <a href="#"
+            class="btn-primary-fill sm:btn-xs xsm:px-20 xsm:py-8 btn-sm md:text-lg text-sm md:px-34 md:py-12 px-18 py-8">SignUp</a>
+
+          <button type="button" id="mobile-menu-button"
+            class="inline-flex items-center p-2 w-40 h-40 justify-center text-sm text-light-content-neutral-900 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-dark-content-neutral-300 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            <svg class="w-20 h-20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <!-- dark mode switch -->
+          <button class="switch" id="darkModeToggle">
+            <span class="">
+              <div class="icon sun sm:ml-20"><i
+                  class="ri-sun-line text-light-content-neutral-900 text-2xl dark:text-dark-content-neutral-300"></i>
+              </div>
+              <div class="icon moon sm:ml-20"><i
+                  class="ri-moon-clear-line text-light-content-neutral-900 text-2xl dark:text-dark-content-neutral-300"></i>
+              </div>
+            </span>
+          </button>
+        </div>
+        <div id="mobile-menu" class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1">
+          <ul
+            class="flex flex-col p-4 font-medium border border-gray-100 bg-light-bg-neutral-100 rounded-lg lg:space-x-8 lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:dark:bg-navbar dark:border-dark-border-neutral-600 dark:bg-dark-bg-neutral-800">
+            <li>
+              <a href="javascript:void(0)"
+                class="text-lg font-medium block p-10 xl:mr-34 text-white bg-light-bg-primary-500 rounded md:bg-transparent md:text-light-content-primary-500 dark:text-white"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)"
+                class="text-lg font-medium block p-10 xl:mr-34 text-light-content-neutral-600 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-light-content-primary-500 dark:text-dark-content-neutral-300 hover:dark:bg-dark-bg-primary-500 hover:dark:text-white">FAQs</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)"
+                class="text-lg font-medium block p-10 xl:mr-34 text-light-content-neutral-600 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-light-content-primary-500 dark:text-dark-content-neutral-300 hover:dark:bg-dark-bg-primary-500 hover:dark:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)"
+                class="text-lg font-medium block p-10 xl:mr-34 text-light-content-neutral-600 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-light-content-primary-500 dark:text-dark-content-neutral-300 hover:dark:bg-dark-bg-primary-500 hover:dark:text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main Section -->
+  <main>
+  </main>
+  <!-- End of Main Section -->
+
+  <!-- Footer Section -->
+  <footer class="2xl:px-80 lg:px-70 md:px-60 sm:px-40 mt-auto xsm:px-20">
+    <hr class="dark:border-dark-border-neutral-600" />
+    <div class="lg:px-56 lg:pt-48 lg:pb-72 sm:px-40 pt-32 pb-52">
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:gap-56 gap-36">
+        <div>
+          <img src="/assets/images/logo.png" class="md:h-32 h-24" alt="Logo" />
+          <p
+            class="text-light-content-neutral-900 xl:text-xl text-lg font-semibold lg:mt-26 lg:mb-20 mt-20 mb-14 dark:text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, doloremque.</p>
+        </div>
+        <div class="important-link">
+          <h4 class="xl:text-1xl text-xl font-semibold text-light-content-neutral-900 md:mb-20 mb-16 dark:text-white">
+            Quick Links</h4>
+          <ul class="flex flex-col md:gap-16 gap-12">
+            <li>
+              <a href="/src/about.html"
+                class="text-light-content-neutral-600 font-medium xl:text-lg text-sm hover:text-light-content-primary-600 dark:text-dark-content-neutral-300">
+                About Us </a>
+            </li>
+            <li>
+              <a href="/src/privacy.html"
+                class="text-light-content-neutral-600 font-medium xl:text-lg text-sm hover:text-light-content-primary-600 dark:text-dark-content-neutral-300">
+                Privacy Policy </a>
+            </li>
+            <li>
+              <a href="/src/refund.html"
+                class="text-light-content-neutral-600 font-medium xl:text-lg text-sm hover:text-light-content-primary-600 dark:text-dark-content-neutral-300">
+                Terms & Condition </a>
+            </li>
+          </ul>
+        </div>
+        <div class="important-link">
+          <h4 class="xl:text-1xl text-xl font-semibold text-light-content-neutral-900 md:mb-20 mb-16 dark:text-white">
+            Contact</h4>
+          <ul class="flex flex-col md:gap-16 gap-12">
+            <li>
+              <a href=""
+                class="text-light-content-neutral-600 font-medium xl:text-lg text-sm hover:text-light-content-primary-600 dark:text-dark-content-neutral-300">
+                Phone : +880 11234565677 </a>
+            </li>
+            <li>
+              <a href=""
+                class="text-light-content-neutral-600 font-medium xl:text-lg text-sm hover:text-light-content-primary-600 dark:text-dark-content-neutral-300">
+                Email : info@test.com </a>
+            </li>
+            <li>
+              <a href=""
+                class="text-light-content-neutral-600 font-medium xl:text-lg text-sm hover:text-light-content-primary-600 dark:text-dark-content-neutral-300">
+                Address : Dhaka, Bangladesh </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-link">
+          <h4 class="xl:text-1xl text-xl font-semibold text-light-content-neutral-900 md:mb-20 mb-16 dark:text-white">
+            Follow Us</h4>
+          <ul class="flex gap-8">
+            <li>
+              <a href=""
+                class="rounded-full bg-light-bg-neutral-50 border border-light-border-neutral-300 text-light-content-neutral-500 w-40 h-40 flex items-center justify-center hover:text-light-content-primary-500 dark:border-dark-border-neutral-600 dark:bg-dark-bg-neutral-900 dark:text-dark-content-neutral-400"><i
+                  class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href=""
+                class="rounded-full bg-light-bg-neutral-50 border border-light-border-neutral-300 text-light-content-neutral-500 w-40 h-40 flex items-center justify-center hover:text-light-content-primary-500 dark:border-dark-border-neutral-600 dark:bg-dark-bg-neutral-900 dark:text-dark-content-neutral-400"><i
+                  class="ri-linkedin-fill"></i></a>
+            </li>
+            <li>
+              <a href=""
+                class="rounded-full bg-light-bg-neutral-50 border border-light-border-neutral-300 text-light-content-neutral-500 w-40 h-40 flex items-center justify-center hover:text-light-content-primary-500 dark:border-dark-border-neutral-600 dark:bg-dark-bg-neutral-900 dark:text-dark-content-neutral-400"><i
+                  class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href=""
+                class="rounded-full bg-light-bg-neutral-50 border border-light-border-neutral-300 text-light-content-neutral-500 w-40 h-40 flex items-center justify-center hover:text-light-content-primary-500 dark:border-dark-border-neutral-600 dark:bg-dark-bg-neutral-900 dark:text-dark-content-neutral-400"><i
+                  class="ri-twitter-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto">
+      <p
+        class="text-sm text-center font-medium text-light-content-neutral-400 mb-16 dark:text-dark-content-neutral-500">
+        &copy; 2020 - 2024 Test . All rights reserved</p>
+    </div>
+  </footer>
+  <!-- End of Footer Section -->
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
