@@ -1,8 +1,36 @@
-# tailwind-starter-kit
-A comprehensive, easy-to-use starter kit for building modern, responsive web projects with Tailwind CSS. This repository includes pre-configured Tailwind CSS setup, essential components, and sample layouts to kickstart your next project. Perfect for developers looking to quickly scaffold a beautiful, functional website or web application.
+# Tailwind New Porject Create
 
-# Setup
-npm install</br>
-npm run build</br>
-npm run dev
+npm init -y
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
+
+
+## Porject .ENV
+
+# Node.js
+node_modules/
+
+# Build files
+/dist/
+/build/
+
+# Cache and logs
+.cache/
+.log/
+
+# Compiled files
+*.css
+*.map
+
+# Dependency directories
+/bower_components/
+
+# Editor directories and files
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
 

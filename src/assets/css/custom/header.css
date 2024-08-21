@@ -1,0 +1,110 @@
+.main-menu .single-list {
+    @apply relative z-10 cursor-pointer xs-to-lg-min:mx-16 lg:mx-10;
+}
+.main-menu .single {
+    @apply block text-primary-title font-semibold xs-to-lg-min:text-base lg:text-md py-43 hover:text-primary;
+}
+.main-menu .single.active, .main-menu .sub-single.active{
+    @apply relative text-primary;
+}
+.main-menu .single.active::before{
+    @apply content-[""] w-full h-2 absolute left-0 bottom-38 z-0 bg-primary transition-bundle;
+}
+.main-menu .sub-single {
+    @apply block text-primary-paragraph font-semibold text-md py-6 px-18 capitalize;
+}
+.main-menu .single-list:hover .sub-single {
+    @apply hover:text-primary hover:tracking-widest;
+}
+.main-menu .main-submenu {
+    @apply absolute w-260 bg-white py-21 left-0 right-0 top-[105%] opacity-0 invisible shadow-submenu border-t-[3px] border-t-primary;
+}
+.circle-btn {
+    @apply flex justify-center items-center bg-primary-btn border border-transparent text-white rounded-full text-xl hover:bg-transparent hover:border hover:border-primary hover:text-primary;
+}
+.btn-primary-fill {
+    @apply bg-primary-btn text-white text-base xs-to-sm-max:text-md font-semibold border border-transparent transition-bundle hover:bg-transparent hover:border hover:border-primary hover:text-primary;
+}
+.btn-primary-outline {
+    @apply bg-transparent text-primary text-base xs-to-sm-max:text-md font-semibold border border-primary transition-bundle hover:bg-primary hover:text-white hover:border hover:border-primary;
+}
+.btn-tertiary-fill {
+    @apply bg-tertiary-btn text-white text-base xs-to-sm-max:text-md font-semibold border border-transparent transition-bundle hover:bg-transparent hover:border hover:border-tertiary-btn hover:text-primary-title;
+}
+
+.header-area .main-menu .listing .single-list:hover > .main-submenu {
+    @apply visible opacity-100 top-[100%] transition-opacity duration-300 ease-in-out;
+}
+.header-area .main-menu .listing .single-list:hover > .main-submenu .main-submenu {
+    @apply left-full top-0;
+}
+.header-area .main-menu .listing .main-submenu > .single-list {
+    @apply m-0 block;
+}
+
+.search-container {
+    @apply hidden absolute top-0 left-0 right-0 text-center w-full bg-white shadow-md p-34 z-[1000];
+}
+.header-area .header-sticky.sticky-bar{
+    @apply z-10 bg-white;
+}
+.sticky-bar{
+    @apply left-0 m-auto fixed top-0 w-full shadow-header z-10 animate-fade-in-down;
+}
+.header-area-two .main-menu .single{
+  @apply text-white hover:text-primary;
+}
+.header-area.header-area-two .header-sticky.sticky-bar{
+    @apply z-10 bg-black/80 backdrop-blur-lg;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        @apply p-6;
+    }
+}
+.search-field {
+    @apply w-4/5 p-8 mr-5 border border-search-border rounded-[6px];
+}
+
+.overlay {
+    @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden z-[9];
+}
+/* slick nav */
+.mobile_menu {
+    @apply right-0 w-full z-100;
+}
+.mobile_menu .slicknav_menu {
+    @apply bg-transparent mt-0;
+}
+.mobile_menu .slicknav_menu .slicknav_btn {
+    @apply -top-53;
+}
+.mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar {
+    @apply !bg-primary h-2 my-7 mx-0;
+}
+.mobile_menu .slicknav_menu .slicknav_nav {
+    @apply mt-0 left-0 right-0 absolute z-100 p-19;
+}
+.mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar .slicknav_nav ul {
+    @apply mt-0 mr-0 mb-0 ml-11;
+}
+.mobile_menu .slicknav_menu .slicknav_btn .slicknav_icon-bar .slicknav_nav ul .single {
+    @apply text-primary-title font-semibold block text-base xs:text-md capitalize;
+}
+.header-area .mobile_menu .slicknav_menu .slicknav_nav .single.active {
+    @apply text-primary;
+}
+.header-area .mobile_menu .slicknav_menu .slicknav_nav .single {
+    @apply text-primary-title block font-semibold text-base xs:text-md capitalize;
+}
+.header-area .mobile_menu .slicknav_menu .slicknav_nav .slicknav_arrow {
+    @apply text-primary -top-30;
+}
+.header-area .mobile_menu .slicknav_menu .slicknav_nav .sub-single{
+    @apply xs:!text-md;
+}
+.header-area .mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a i{
+    @apply hidden;
+}
+/* end */

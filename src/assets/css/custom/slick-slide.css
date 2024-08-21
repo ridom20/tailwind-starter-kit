@@ -1,0 +1,187 @@
+/* Urgent Slide */
+.urgent-area-slide {
+    @apply relative xs-to-md-min:rounded-tl-[10px] xs-to-md-min:rounded-bl-[10px] xs-to-md-max:rounded-[10px] overflow-hidden;
+}
+
+.urgent-area-slide .slick-list,
+.urgent-area-slide .slick-track {
+    @apply h-full;
+}
+
+.urgent-area-slide .slick-dots {
+    @apply flex justify-center items-center m-0 py-16 px-0 absolute bottom-20 xs-to-md-max:bottom-10 w-full list-none;
+}
+
+.urgent-area-slide .slick-dots li {
+    margin: 0 0.25rem;
+}
+.urgent-area-slide .slick-dots button {
+    @apply block w-30 h-6 p-0 border-0 rounded-[10px] bg-white -indent-999;
+}
+.urgent-area-slide .slick-dots .slick-active button {
+    @apply w-20 h-6 bg-primary;
+}
+/* Testimonial Slide */
+.testimonial-section .single-testimonial {
+    @apply text-center mt-105;
+}
+.testimonial-section .testimonial-slider .slick-dots li {
+    @apply mr-4 ml-4;
+}
+.testimonial-section .testimonial-slider .slick-dots {
+    @apply flex justify-center items-center m-0 pt-20 absolute top-0 w-full;
+}
+.testimonial-section .testimonial-img-horizontal {
+    @apply inline-block rounded-full overflow-hidden mb-25 w-50 h-50 cursor-pointer;
+}
+.testimonial-section .testimonial-slider .slick-dots .slick-active .slick-custom-dot .testimonial-img-horizontal {
+    @apply border-2 border-primary w-60 h-60;
+}
+.testimonial-section .testimonial-slider .slick-arrow {
+    @apply absolute top-auto bottom-0 border-none bg-transparent text-6xl text-primary z-10;
+}
+.testimonial-section .testimonial-slider .slick-prev {
+    @apply left-[44%] lg:left-[42%] md:left-[40%] sm:left-[38%] xs:!hidden transform -translate-x-1/2;
+}
+.testimonial-section .testimonial-slider .slick-next {
+    @apply right-[44%] lg:right-[42%] md:right-[40%] sm:right-[38%] xs:!hidden transform translate-x-1/2;
+}
+.testimonial-section-two .slick-slide {
+    @apply relative;
+}
+.testimonial-section-two .slick-prev,
+.testimonial-section-two .slick-next {
+    @apply w-50 h-50 text-6xl text-white bg-primary border-none rounded-full flex justify-center items-center absolute -top-80 transform -translate-y-1/2 cursor-pointer z-[1] transition-bundle hover:bg-primary-light;
+}
+.testimonial-section-two .slick-prev {
+    @apply right-60;
+}
+.testimonial-section-two .slick-next {
+    @apply right-0;
+}
+.testimonial-section-two .slick-current .single-testimonial {
+    @apply border border-primary;
+}
+.testimonial-section-two .slick-current .single-testimonial .quote path {
+    opacity: 1;
+}
+.testimonial-section-two .slick-slide {
+    @apply my-0 mx-15 pt-25 pb-14;
+}
+.testimonial-slider-three-active {
+    @apply relative rounded-[15px] overflow-hidden;
+}
+.testimonial-slider-three-active .slick-slider img {
+    @apply w-full rounded-[15px];
+}
+.testimonial-slider-three-active .slick-slide {
+    @apply relative h-auto transition-bundle;
+}
+
+.testimonial-slider-three-active .slick-list,
+.testimonial-slider-three-active .slick-track {
+    @apply h-full;
+}
+.testimonial-slider-three-active .slick-dots {
+    @apply flex justify-center items-center m-0 py-16 px-0 absolute bottom-8 w-full list-none xs-to-md-max:bottom-10;
+}
+.testimonial-slider-three-active .slick-dots li {
+    @apply my-0 mx-6;
+}
+.testimonial-slider-three-active .slick-dots button {
+    @apply block w-48 h-6 p-0 border-none bg-white -indent-[9999px];
+}
+.testimonial-slider-three-active .slick-dots .slick-active button {
+    @apply w-25 h-6 bg-primary;
+}
+/* Gallery Slide */
+.gallery-slider .slick-slide {
+    @apply my-0 mx-10;
+}
+.gallery-slider .slick-slide img {
+    @apply w-full h-full;
+}
+.gallery-slider .slick-list {
+    @apply my-0 -mx-10;
+}
+/* Popular Brand Slide */
+.popular-brand-section .slick-slide {
+    @apply my-0 mx-15;
+}
+.popular-brand-section .slick-slide img {
+    @apply m-auto;
+}
+.popular-brand-section .slick-track {
+    @apply flex items-center justify-center;
+}
+/* Event Slide */
+.our-event-three .slick-slide {
+    @apply py-40 px-0 relative;
+}
+.our-event-three .slick-slide .brush-bg {
+    @apply absolute bottom-200 left-30 xs-to-md-max:bottom-150 xs:left-70;
+}
+
+.our-event-three .slick-slide .brush-bg::before {
+    content: "30 Jun 2023";
+    @apply text-primary-title text-md font-bold py-7 px-14 absolute top-4 left-24 visible w-72 text-center z-[2] xs:text-sm;
+}
+
+.our-event-three .slick-slider .main-img {
+    @apply xs-to-md-max:w-[90%] xs:!w-[75%] xs-to-md-max:h-250 xs-to-md-max:m-auto;
+}
+.our-event-three .slick-slide {
+    @apply py-40 px-0 relative h-auto transition-bundle xs-to-md-max:opacity-50 xs-to-md-min:transform xs-to-md-min:scale-90 xs-to-md-min:transition-bundle xs-to-md-min:py-40 xs-to-md-min:px-0;
+}
+.our-event-three .slick-slide.slick-current {
+    @apply opacity-100  z-[99] xs-to-md-max:transform xs-to-md-max:scale-125;
+}
+.our-event-three .slick-slide img {
+    @apply xs-to-md-min:max-w-full xs-to-md-min:transition-bundle;
+}
+.our-event-three .slick-center {
+    @apply xs-to-md-min:transform xs-to-md-min:scale-110;
+}
+.our-event-three .slick-list,
+.our-event-three .slick-track {
+    @apply h-full mb-30 xs-to-md-max:mb-0;
+}
+.our-event-three .slick-dots {
+    @apply flex justify-center items-center m-0 py-16 px-0 absolute w-full -bottom-25 list-none xs-to-md-max:-bottom-35;
+}
+.our-event-three .slick-dots li {
+    @apply my-0 mx-4;
+}
+.our-event-three .slick-dots button {
+    @apply block w-48 h-6 p-0 border-none rounded-[10px] bg-[#d8d8d8] -indent-[9999px];
+}
+.our-event-three .slick-dots .slick-active button {
+    @apply w-25 h-6 bg-primary;
+}
+/* Favourite Slide */
+.favourite-section .slick-track {
+    @apply flex items-center justify-between;
+}
+/* Related Blogs */
+.related-blog-slider .slick-arrow-prev {
+    @apply absolute -bottom-90 transform -translate-y-1/2 border-none flex items-center left-20;
+}
+.related-blog-slider .slick-arrow-prev .arrow-text {
+    @apply text-primary-title text-base xs:text-sm font-normal leading-[25px] ml-40;
+}
+.related-blog-slider .slick-arrow-next .arrow-text {
+    @apply text-primary-title text-base xs:text-sm font-normal leading-[25px] mr-40;
+}
+.related-blog-slider .slick-prev,
+.related-blog-slider .slick-next {
+    @apply w-30 h-30 text-xl flex justify-center items-center text-white bg-primary border-none rounded-full cursor-pointer z-[1] transition-bundle hover:bg-primary-light;
+}
+.related-blog-slider .slick-prev {
+    @apply absolute left-0;
+}
+.related-blog-slider .slick-next {
+    @apply absolute right-0;
+}
+.related-blog-slider .slick-arrow-next {
+    @apply absolute -bottom-90 transform -translate-y-1/2 border-none flex items-center right-20;
+}

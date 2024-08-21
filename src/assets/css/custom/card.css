@@ -1,0 +1,6 @@
+.helpful-card {
+    @apply p-20 rounded-[10px] bg-white shadow-helpful-card cursor-pointer transition-bundle group-hover:bg-primary;
+}
+.helpful-card-two {
+    @apply relative p-30 rounded-[10px] bg-white shadow-helpful-card cursor-pointer transition-bundle group-hover:bg-primary;
+}
